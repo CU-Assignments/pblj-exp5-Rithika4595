@@ -1,0 +1,21 @@
+import java.util.*;
+public class AutoboxingUnboxingSum {
+    
+    public static int calculateSum(List<String> numbers) {
+        int sum = 0; 
+        
+        for (String numStr : numbers) {
+            Integer num = Integer.parseInt(numStr); 
+            sum += num; 
+        }
+        
+        return sum;
+    }
+   public static void main(String[] agrs){
+        List<String> numberStrings = Arrays.asList("10", "20", "30", "40", "50");
+        
+        int result = calculateSum(numberStrings);
+        
+        System.out.println("Sum of numbers: " + result);
+    }
+   }
